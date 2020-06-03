@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fast-cache/fast-cache.git"
+    "url": "git+https://github.com/fengwenxin/fg-control.git"
   },
   "keywords": [
     "cache"
