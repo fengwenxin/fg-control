@@ -11,6 +11,9 @@ class FastCache {
     clear() {
         this.list = {}
     }
+    init(){
+     console.log('this is init...')
+    }
 }
 
 window.FastCache = FastCache

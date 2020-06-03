@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d692167c-f541-4cfc-8b21-93d222df066d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,17 +25,17 @@
           <entry key="LICENSE" value="1" />
           <entry key="babelrc" value="2" />
           <entry key="gitignore" value="4" />
-          <entry key="html" value="2" />
-          <entry key="js" value="7" />
+          <entry key="html" value="3" />
+          <entry key="js" value="8" />
           <entry key="json" value="6" />
           <entry key="md" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="2" />
+          <entry key="HTML" value="3" />
           <entry key="JSON" value="8" />
-          <entry key="JavaScript" value="7" />
+          <entry key="JavaScript" value="8" />
           <entry key="Markdown" value="9" />
           <entry key="PLAIN_TEXT" value="5" />
         </counts>
@@ -44,17 +44,17 @@
         <counts>
           <entry key="babelrc" value="1" />
           <entry key="gitignore" value="17" />
-          <entry key="html" value="4" />
-          <entry key="js" value="28" />
+          <entry key="html" value="10" />
+          <entry key="js" value="69" />
           <entry key="json" value="45" />
           <entry key="md" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="4" />
+          <entry key="HTML" value="10" />
           <entry key="JSON" value="46" />
-          <entry key="JavaScript" value="28" />
+          <entry key="JavaScript" value="69" />
           <entry key="Markdown" value="42" />
           <entry key="PLAIN_TEXT" value="17" />
         </counts>
@@ -64,53 +64,19 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+        <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+            <state relative-caret-position="294">
+              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/example/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SUMMARY.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="210">
-                <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="42">
-                <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/doc/dev/dev1.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
+            <state relative-caret-position="294">
+              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -119,17 +85,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.babelrc" />
-        <option value="$PROJECT_DIR$/example/test.html" />
-        <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/example/test.html" />
       </list>
     </option>
   </component>
@@ -144,7 +113,6 @@
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
-      <path value="$PROJECT_DIR$/node_modules/@types/json-schema/package.json" />
       <path value="$PROJECT_DIR$/node_modules/@webassemblyjs/ast/package.json" />
       <path value="$PROJECT_DIR$/node_modules/@webassemblyjs/floating-point-hex-parser/package.json" />
       <path value="$PROJECT_DIR$/node_modules/@webassemblyjs/helper-api-error/package.json" />
@@ -319,7 +287,6 @@
       <path value="$PROJECT_DIR$/node_modules/define-property/node_modules/is-descriptor/package.json" />
       <path value="$PROJECT_DIR$/node_modules/define-property/package.json" />
       <path value="$PROJECT_DIR$/node_modules/des.js/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/detect-file/package.json" />
       <path value="$PROJECT_DIR$/node_modules/detect-indent/package.json" />
       <path value="$PROJECT_DIR$/node_modules/diffie-hellman/node_modules/bn.js/package.json" />
       <path value="$PROJECT_DIR$/node_modules/diffie-hellman/package.json" />
@@ -327,7 +294,6 @@
       <path value="$PROJECT_DIR$/node_modules/duplexify/package.json" />
       <path value="$PROJECT_DIR$/node_modules/elliptic/node_modules/bn.js/package.json" />
       <path value="$PROJECT_DIR$/node_modules/elliptic/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/emoji-regex/package.json" />
       <path value="$PROJECT_DIR$/node_modules/emojis-list/package.json" />
       <path value="$PROJECT_DIR$/node_modules/end-of-stream/package.json" />
       <path value="$PROJECT_DIR$/node_modules/enhanced-resolve/node_modules/memory-fs/package.json" />
@@ -344,7 +310,6 @@
       <path value="$PROJECT_DIR$/node_modules/expand-brackets/node_modules/define-property/package.json" />
       <path value="$PROJECT_DIR$/node_modules/expand-brackets/node_modules/extend-shallow/package.json" />
       <path value="$PROJECT_DIR$/node_modules/expand-brackets/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/expand-tilde/package.json" />
       <path value="$PROJECT_DIR$/node_modules/extend-shallow/node_modules/is-extendable/package.json" />
       <path value="$PROJECT_DIR$/node_modules/extend-shallow/package.json" />
       <path value="$PROJECT_DIR$/node_modules/extglob/node_modules/define-property/package.json" />
@@ -360,7 +325,6 @@
       <path value="$PROJECT_DIR$/node_modules/fill-range/package.json" />
       <path value="$PROJECT_DIR$/node_modules/find-cache-dir/package.json" />
       <path value="$PROJECT_DIR$/node_modules/find-up/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/findup-sync/package.json" />
       <path value="$PROJECT_DIR$/node_modules/flush-write-stream/package.json" />
       <path value="$PROJECT_DIR$/node_modules/for-in/package.json" />
       <path value="$PROJECT_DIR$/node_modules/fragment-cache/package.json" />
@@ -372,9 +336,6 @@
       <path value="$PROJECT_DIR$/node_modules/get-value/package.json" />
       <path value="$PROJECT_DIR$/node_modules/glob-parent/package.json" />
       <path value="$PROJECT_DIR$/node_modules/glob/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/global-modules/node_modules/global-prefix/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/global-modules/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/global-prefix/package.json" />
       <path value="$PROJECT_DIR$/node_modules/globals/package.json" />
       <path value="$PROJECT_DIR$/node_modules/graceful-fs/package.json" />
       <path value="$PROJECT_DIR$/node_modules/has-ansi/package.json" />
@@ -388,7 +349,6 @@
       <path value="$PROJECT_DIR$/node_modules/hash.js/package.json" />
       <path value="$PROJECT_DIR$/node_modules/hmac-drbg/package.json" />
       <path value="$PROJECT_DIR$/node_modules/home-or-tmp/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/homedir-polyfill/package.json" />
       <path value="$PROJECT_DIR$/node_modules/https-browserify/package.json" />
       <path value="$PROJECT_DIR$/node_modules/ieee754/package.json" />
       <path value="$PROJECT_DIR$/node_modules/iferr/package.json" />
@@ -397,7 +357,6 @@
       <path value="$PROJECT_DIR$/node_modules/infer-owner/package.json" />
       <path value="$PROJECT_DIR$/node_modules/inflight/package.json" />
       <path value="$PROJECT_DIR$/node_modules/inherits/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/ini/package.json" />
       <path value="$PROJECT_DIR$/node_modules/interpret/package.json" />
       <path value="$PROJECT_DIR$/node_modules/invariant/package.json" />
       <path value="$PROJECT_DIR$/node_modules/invert-kv/package.json" />
@@ -485,7 +444,6 @@
       <path value="$PROJECT_DIR$/node_modules/pako/package.json" />
       <path value="$PROJECT_DIR$/node_modules/parallel-transform/package.json" />
       <path value="$PROJECT_DIR$/node_modules/parse-asn1/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/parse-passwd/package.json" />
       <path value="$PROJECT_DIR$/node_modules/pascalcase/package.json" />
       <path value="$PROJECT_DIR$/node_modules/path-browserify/package.json" />
       <path value="$PROJECT_DIR$/node_modules/path-dirname/package.json" />
@@ -529,8 +487,6 @@
       <path value="$PROJECT_DIR$/node_modules/require-directory/package.json" />
       <path value="$PROJECT_DIR$/node_modules/require-main-filename/package.json" />
       <path value="$PROJECT_DIR$/node_modules/resolve-cwd/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/resolve-dir/node_modules/global-modules/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/resolve-dir/package.json" />
       <path value="$PROJECT_DIR$/node_modules/resolve-from/package.json" />
       <path value="$PROJECT_DIR$/node_modules/resolve-url/package.json" />
       <path value="$PROJECT_DIR$/node_modules/ret/package.json" />
@@ -583,7 +539,6 @@
       <path value="$PROJECT_DIR$/node_modules/strip-eof/package.json" />
       <path value="$PROJECT_DIR$/node_modules/supports-color/package.json" />
       <path value="$PROJECT_DIR$/node_modules/tapable/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/terser-webpack-plugin/node_modules/schema-utils/package.json" />
       <path value="$PROJECT_DIR$/node_modules/terser-webpack-plugin/node_modules/source-map/package.json" />
       <path value="$PROJECT_DIR$/node_modules/terser-webpack-plugin/package.json" />
       <path value="$PROJECT_DIR$/node_modules/terser/node_modules/source-map-support/package.json" />
@@ -631,24 +586,15 @@
       <path value="$PROJECT_DIR$/node_modules/watchpack/chokidar2/package.json" />
       <path value="$PROJECT_DIR$/node_modules/watchpack/package.json" />
       <path value="$PROJECT_DIR$/node_modules/webpack-cli/node_modules/ansi-styles/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/webpack-cli/node_modules/chalk/node_modules/supports-color/package.json" />
       <path value="$PROJECT_DIR$/node_modules/webpack-cli/node_modules/chalk/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/webpack-cli/node_modules/emojis-list/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/webpack-cli/node_modules/enhanced-resolve/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/webpack-cli/node_modules/json5/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/webpack-cli/node_modules/loader-utils/package.json" />
       <path value="$PROJECT_DIR$/node_modules/webpack-cli/node_modules/supports-color/package.json" />
       <path value="$PROJECT_DIR$/node_modules/webpack-cli/package.json" />
       <path value="$PROJECT_DIR$/node_modules/webpack-sources/node_modules/source-map/package.json" />
       <path value="$PROJECT_DIR$/node_modules/webpack-sources/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/webpack/node_modules/schema-utils/package.json" />
       <path value="$PROJECT_DIR$/node_modules/webpack/package.json" />
       <path value="$PROJECT_DIR$/node_modules/which-module/package.json" />
       <path value="$PROJECT_DIR$/node_modules/which/package.json" />
       <path value="$PROJECT_DIR$/node_modules/worker-farm/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/wrap-ansi/node_modules/ansi-regex/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/wrap-ansi/node_modules/ansi-styles/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/wrap-ansi/node_modules/strip-ansi/package.json" />
       <path value="$PROJECT_DIR$/node_modules/wrap-ansi/package.json" />
       <path value="$PROJECT_DIR$/node_modules/wrappy/package.json" />
       <path value="$PROJECT_DIR$/node_modules/xtend/package.json" />
@@ -676,6 +622,16 @@
             <path>
               <item name="fg-control" type="b2602c69:ProjectViewProjectNode" />
               <item name="fg-control" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fg-control" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fg-control" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fg-control" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fg-control" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -728,7 +684,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.5184136" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -742,17 +698,36 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.babelrc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
@@ -776,13 +751,6 @@
     <entry file="file://$PROJECT_DIR$/release/bundle.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/example/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/doc/dev/dev1.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -805,23 +773,37 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="210">
-            <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <caret line="10" selection-start-line="10" selection-end-line="10" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
-          <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        <state relative-caret-position="294">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
         </state>
       </provider>
     </entry>
