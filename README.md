@@ -8,9 +8,9 @@
 
 ## 安装下载
 
-- 下载地址 https://github.com/fast-cache/fast-cache/releases
+- 下载地址 https://github.com/fengwenxin/fg-control/releases
 - `npm i fast-cache-npm`
-- CDN http://unpkg.com/fast-cache-npm/release/bundle.js
+- CDN http://unpkg.com/fg-control/release/bundle.js
 
 ## 快速使用
 
@@ -21,7 +21,7 @@
 
 ## 交流 & 提问
 
-https://github.com/fast-cache/fast-cache/issues
+https://github.com/fengwenxin/fg-control/issues
 
 ## 关于作者
 
