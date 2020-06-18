@@ -1,7 +1,7 @@
 {
   "name": "fg-control",
-  "version": "0.0.6",
-  "description": "短小精悍的前端缓存工具，防止内存“侧漏”",
+  "version": "0.0.7",
+  "description": "流控引擎”",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
