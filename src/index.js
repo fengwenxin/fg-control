@@ -13,6 +13,8 @@ class FastCache {
     }
     init(){
      console.log('this is init...')
+     console.log('this is init...')
+     console.log('this is init...')
     }
 }
 
