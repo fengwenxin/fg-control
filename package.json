@@ -1,6 +1,6 @@
 {
   "name": "fg-control",
-  "version": "0.0.12",
+  "version": "0.1.2",
   "description": "流控引擎”",
   "main": "src/index.js",
   "scripts": {
