@@ -1,193 +1,129 @@
+// main.js
+import Grid from './core/grid';
+import Toolkit from './core/toolkit';
+
+function defaultCommit(commit, data, request) {
+  //  通信提交
+  return request({
+    url: `/requestForward/${commit}`,
+    // url: `http://192.168.2.179:30099/mock/35/${commit}`,
+    method: 'post',
+    data
+  }).then(response => {
+    const {statusCode} = response;
+    if (statusCode == 200) {
+      return response
+    } else {
+      return false
+    }
+  }).catch(err => {
+    throw new Error(err)
+  })
+}
+
+function defineCommit(currentObj,commitFunc, request) {
+  // 自定义提交
+  try {
+    return Toolkit.matrix.handleDefineFn(currentObj,request, commitFunc)
+  }catch (e) {
+    throw new Error(e)
+  }
+}
+
+function localCommit(data) {
+  // 本地提交
+  return new Promise((resolve, reject) => {
+    const _response = Object.assign({}, data);
+    resolve(_response)
+  });
+}
+
+function orderCommit(data) {
+  // 订单提交
+  return new Promise((resolve, reject) => {
+    // $refs.show()
+    const _response = Object.assign({}, data);
+    resolve(_response)
+  });
+}
+
 /**
- * 流控引擎
+ * 封装四个提交
  */
-class FG {
-  constructor() {
-    this.ISOK = false;
-    this.OUTFLAG = null;   // 提交标识
-    // 流程节点
-    this.START = "01"; // 开始
-    this.END = "02"; // 结束
-    this.DOING = "03"; // 业务类型
-
-    // 提交类型
-    this.COMMIT_DEFAULT = "01"; // 默认提交
-    this.COMMIT_ORDER = "02"; // 订单提交
-    this.COMMIT_DEFINE = "03"; // 自定义提交
-    this.COMMIT_LOCAL = "04"; // 本地提交
-
-    // 返回设置
-    this.CAN_ROLLBACK = "01"; // 可以回退
-    this.CANNOT_ROLLBACK = "02"; // 不可回退
-    // 是否保留数据
-    this.CLEAR_DATA = "01", // 清除数据
-        this.KEEP_DATA = "02",  // 保留数据
-
-        // 数据
-        this.user = {};
-    this.platform = {};
-    this.nodes = {};
-    this.list = {};
-    this.utils = {};
-    // 流程当前的执行过程
-    this.process = [];
+class Api {
+  constructor(requestObj) {
+    this.request = requestObj;
   }
 
-  /**
-   * 设置数据
-   * @param object
-   */
-  setData(key, value) {
-    this[key] = value;
+  async defaultCommit(commitFunc, data) {  // 默认提交
+    return await defaultCommit(commitFunc, data, this.request);
   }
 
-  /**
-   * 开始节点
-   * @returns {*}
-   */
-  getStartNode() {
-    return this._find(item => item.type == this.START) ||  {}
+  async defineCommit(currentObj,commitFunc) { // 自定义提交
+    return await defineCommit(currentObj,commitFunc, this.request);
   }
 
-  /**
-   * 结束节点
-   * @returns {*}
-   */
-  getEndNode() {
-    return this._find(item => item.type == this.END) || {}
+  async localCommit(data) { // 本地提交
+    return await localCommit(data);
   }
 
-  /**
-   * 下一节点
-   * @param next_node
-   * @returns {*}
-   */
-  getNext(next_node) {
-    return this._find(item => item.nodeCode == next_node)  || {} ;
-  }
-
-  /**
-   * 节点数据
-   * @param nodeCode
-   * @returns {*}
-   */
-  getNodeData(nodeCode) {
-    return this._find(item => item.nodeCode == nodeCode) || {};
-  }
-
-  /**
-   * 检查节点能否执行
-   * @param checkstart
-   * @returns {*}
-   */
-  checkStart(checkstart) {
-    if (checkstart) {
-      return this._solveConfigJs(checkstart)
-    }
-    return true;
-  }
-
-  /**
-   * 处理公共函数js代码
-   * @param JsCode
-   * @returns {any}
-   * @private
-   */
-  solveCommonJS(JsCode) {
-    try {
-      return eval(JsCode)
-    } catch (error) {
-      console.log('===commonJs===', JsCode)
-      throw  new Error(error)
-    }
-  }
-
-  /**
-   * 处理配置数据js代码
-   * @param inputConfigJs
-   * @returns {*}
-   * @private
-   */
-  _solveConfigJs(JsCode) {
-    try {
-      const platform = this.platform;
-      const user = this.user;
-      const nodes = this.nodes;
-      const utils = this.utils;
-      console.log('{ platform, user, nodes, utils} ', {platform, user, nodes, utils})
-      const resCode = `function _execute(user, platform, nodes, utils){  ${JsCode}  return main(...arguments);}`;
-      // console.log('resCode',resCode)
-      const exeCode = eval("(" + resCode + ")");
-      let rs = exeCode(user, platform, nodes, utils);
-      return rs;
-    } catch (error) {
-      console.log('===inputConfigJs===', JsCode)
-      throw new Error(error)
-    }
-  }
-
-  /**
-   * 保存节点数据
-   * @param nodeCode
-   * @param value
-   */
-  saveNode(nodeCode, value) {
-    this.nodes[nodeCode] = value;
-    console.log('nodes', JSON.stringify(this.nodes))
-  }
-
-  /**
-   * 查找数据
-   * @param callback
-   * @returns {*}
-   * @private
-   */
-  _find(callback){
-    return this.list.find(callback)
-  }
-
-  /**
-   * 获取所有节点数据
-   * @returns {{}|*}
-   */
-  getNodes() {
-    return this.nodes;
-  }
-
-  /**
-   * 节点加入到执行流程
-   * @param nodeCode
-   */
-  pushProcess(nodeCode) {
-    if (this.process.includes(nodeCode) == false) {
-      this.process.push(nodeCode)
-    }
-  }
-  /**
-   *
-   * @param arr
-   */
-  setProcess(arr){
-    this.process = arr || [];
-  }
-  /**
-   * 获取执行流程
-   * @returns {Array}
-   */
-  getProcess() {
-    return this.process || [];
+  async orderCommit(data) { // 订单提交
+    return await orderCommit(data);
   }
 }
 
 // 返回单例
-let getFG = (function () {
-  let fee
+let oneCase = (function () {
+  let instance
   return function () {
-    if (!fee) {
-      fee = new FG();
+    if (!instance) {
+      instance = new Grid();
     }
-    return fee
+    return instance
   }
 })()
 
-export default getFG;
+export {
+  Grid,
+  oneCase,
+  Toolkit,
+  Api
+}
+
+/*
+
+function main(currentObj, request, callBack) {
+  debugger;
+  var pageIndex = 1;
+  var pageSize = 5;
+  request.post("http://192.168.2.179:30099/mock/35/editStatus", {body: {listName: ""},
+    header: {
+      antiWeightSeqNo: "anim",
+      gloSeqNo: "G11111",
+      pageIndex: pageIndex,
+      pageSize: pageSize,
+      projectId: "consequat sit",
+      reqSeqNo: "R11111",
+      reqTime: "202012121212",
+      serviceGroupid: "pariatur anim in",
+      serviceId: "consectetur",
+      serviceName: "dolor nisi ex",
+      subProjectId: "velit in t",
+      userInfo: {role: ["dolor do", "deserunt ea", "anim occaecat ea", "sint aliqua dolore"], username: "veniam"}
+    }
+  }).then(res => {
+    debugger;
+    console.log(res);
+    if (res.header.rspCode == "00000000" || res.header.rspCode == "SP000000") {
+      currentObj.$notify({title: "Success", message: "查询成功", type: "success", duration: 2000});
+    } else if (res.header.rspCode == "99999999") {
+      currentObj.$notify({title: "fail", message: "查询失败", type: "info", duration: 2000});
+      return;
+    }
+    callBack(res.body.define);
+    return res.body.define;
+  }).catch(error => console.log(error));
+}
+*/
+
+
